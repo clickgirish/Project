@@ -53,6 +53,20 @@
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TK.BusinessManagement.Models\TK.BusinessManagement.Models.csproj">
+      <Project>{ccf2e345-0155-4a13-9be4-053b8384844c}</Project>
+      <Name>TK.BusinessManagement.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TK.BusinessManagement.Repositories\TK.BusinessManagement.Repositories.csproj">
+      <Project>{c797abda-033e-45d4-bb9a-59848fd53472}</Project>
+      <Name>TK.BusinessManagement.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TK.BusinessManagement.SQLRepositories\TK.BusinessManagement.SQLRepositories.csproj">
+      <Project>{6aba7b00-5ed0-425c-bafa-1f29436eb080}</Project>
+      <Name>TK.BusinessManagement.SQLRepositories</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

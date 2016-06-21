@@ -42,6 +42,20 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TK.BusinessManagement.Models\TK.BusinessManagement.Models.csproj">
+      <Project>{ccf2e345-0155-4a13-9be4-053b8384844c}</Project>
+      <Name>TK.BusinessManagement.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TK.BusinessManagement.Repositories\TK.BusinessManagement.Repositories.csproj">
+      <Project>{c797abda-033e-45d4-bb9a-59848fd53472}</Project>
+      <Name>TK.BusinessManagement.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TK.BusinessManagement.Utilities\TK.BusinessManagement.Utilities.csproj">
+      <Project>{28dddd07-ab69-4dfa-91bd-fc511c2b7a34}</Project>
+      <Name>TK.BusinessManagement.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
